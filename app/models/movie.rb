@@ -13,4 +13,7 @@
 #  director_id :integer
 #
 class Movie < ApplicationRecord
+  def director
+    return "Hello!"
+  end
 end
