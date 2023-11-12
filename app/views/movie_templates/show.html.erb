@@ -112,12 +112,8 @@
     Director
   </dt>
   <dd>
-    <%the_director = @the_movie.director%>
-    <% if the_director != nil %>
-      <%= the_director.name %>
-    <% else %>
-      Uh oh! We weren't able to find a director for this movie.
-    <% end %>
+    <%=@the_movie.director%>
+
   </dd>
 
   <dt>

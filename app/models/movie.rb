@@ -14,6 +14,8 @@
 #
 class Movie < ApplicationRecord
   def director
-    return "Hello!"
+    my_director_id = self.director_id
+    matching_director = Director.where(:id => my_director_id).at(0).name
+    return matching_director
   end
 end
